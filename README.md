@@ -62,12 +62,12 @@ Aplikasi ini dibangun menggunakan arsitektur Model-View-Controller (MVC) yang me
           └── delete.php                 # Halaman konfirmasi hapus
 
 ## PENJELASAN ALUR
-1️. User mengakses aplikasi melalui index.php
+1. User mengakses aplikasi melalui index.php :
 Semua permintaan (request) dari browser masuk melalui file index.php.
-2️. Index.php memilih Controller yang tepat
+2. Index.php memilih Controller yang tepat :
 Berdasarkan URL atau parameter GET, index.php menentukan kontroler mana yang dipanggil.
 3. Controller memproses logika / aturan aplikasi
-4. Controller memanggil Model untuk CRUD database
+4. Controller memanggil Model untuk CRUD database :
    Model bertugas mengurus interaksi database.
    Semua query SQL berada di folder Model/.
 5. Controller mengirim data ke View
