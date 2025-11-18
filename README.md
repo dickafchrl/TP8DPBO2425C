@@ -61,7 +61,17 @@ Aplikasi ini dibangun menggunakan arsitektur Model-View-Controller (MVC) yang me
           ├── edit.php                   # Form edit data mata kuliah
           └── delete.php                 # Halaman konfirmasi hapus
 
-
+## PENJELASAN ALUR
+1️. User mengakses aplikasi melalui index.php
+Semua permintaan (request) dari browser masuk melalui file index.php.
+2️. Index.php memilih Controller yang tepat
+Berdasarkan URL atau parameter GET, index.php menentukan kontroler mana yang dipanggil.
+3. Controller memproses logika / aturan aplikasi
+4. Controller memanggil Model untuk CRUD database
+   Model bertugas mengurus interaksi database.
+   Semua query SQL berada di folder Model/.
+5. Controller mengirim data ke View
+6. View menggunakan Template
 
 ## DOKUMENTASI
 https://github.com/user-attachments/assets/7ddb7519-a6ec-4754-8213-154f36375f7a
